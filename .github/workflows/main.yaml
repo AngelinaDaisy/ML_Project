@@ -80,7 +80,9 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-      
+      - name: Run AWS CLI command
+        run: aws ecr get-login-password --region AWS_REGION | docker login --username AWS --password-stdin {AWS_ACCESS_KEY_ID}.dkr.ecr.{region}.amazonaws.com
+
       
       - name: Pull latest images
         run: |
