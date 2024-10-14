@@ -1,5 +1,5 @@
 ## End to End Machine Learning Project
 
-#Docker
-#AWS Deployement
-#Integration
+Docker
+AWS Deployement
+Integration
